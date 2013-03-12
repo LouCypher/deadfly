@@ -19,4 +19,4 @@ Expand AdF.ly link via Firefox context menu.
 ## Licenses
 
 * DeAdFly extension is licensed under [Mozilla Public License 2.0](http://www.mozilla.org/MPL/2.0/).
-* Built-in AdF.ly Redir userscript and userscript compiler are licensed under [GNU General Public License 3.0](http://www.gnu.org/licenses/gpl-3.0.html).
+* [AdF.ly Redir](https://github.com/LouCypher/userscripts/tree/master/adf.ly-redir) and [Greasemonkey compiler](https://github.com/arantius/greasemonkey-compiler) are licensed under [GNU General Public License 3.0](http://www.gnu.org/licenses/gpl-3.0.html).
