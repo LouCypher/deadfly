@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+    Contributor(s):
+    - LouCypher (original code)
+-->
+
+<!DOCTYPE vbox SYSTEM "chrome://deadfly/locale/">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <setting pref="extensions.DeAdFly.action"
+           type="radio"
+           title="Default action">
+    <radiogroup>
+      <vbox>
+        <radio value="1" label="&deadfly.settings.action.openInCurrentTab;"/>
+        <radio value="2" label="&deadfly.settings.action.openInNewTab;"/>
+        <radio value="10" label="&deadfly.settings.action.openInIE;" class="kaskus-y"/>
+        <radio value="11" label="&deadfly.settings.action.openInPhone;" class="kaskus-y"/>
+        <radio value="12" label="&deadfly.settings.action.openInLaptop;" class="kaskus-y"/>
+        <radio value="13" label="&deadfly.settings.action.openInDadLaptop;" class="kaskus-y"/>
+        <radio value="0" label="&deadfly.settings.action.displayInURLBar;"/>
+        <radio value="20" label="&deadfly.settings.action.read;" class="kaskus-y"/>
+        <radio value="21" label="&deadfly.settings.action.tell;" class="kaskus-y"/>
+        <radio value="30" label="&deadfly.settings.action.doNothing;" class="kaskus-y"/>
+      </vbox>
+    </radiogroup>
+  </setting>
+
+  <setting pref="extensions.DeAdFly.openAdFly"
+           type="bool"
+           class="kaskus-n"
+           title="&deadfly.settings.openAdFlyIfFailed;"/>
+
+  <setting pref="extensions.DeAdFly.openAdFly"
+           type="radio"
+           class="kaskus-y"
+           title="&deadfly.settings.ifFailed;">
+    <radiogroup>
+      <radio value="true" label="&deadfly.settings.ifFailed.openAdFly;"/>
+      <radio value="false" label="&deadfly.settings.ifFailed.doNothing;"/>
+    </radiogroup>
+  </setting>
+
+  <setting pref="extensions.DeAdFly.redir.enabled"
+           type="bool"
+           title="&deadfly.settings.adFlyRedir;"
+           desc="&deadfly.settings.adFlyRedir.desc;"/>
+
+  <setting pref="extensions.DeAdFly.sendReferrer"
+           type="bool"
+           class="kaskus-n"
+           title="&deadfly.settings.sendReferrer;"/>
+
+  <setting pref="extensions.DeAdFly.sendReferrer"
+           type="radio"
+           class="kaskus-y"
+           title="&deadfly.settings.sendReferrer;">
+    <radiogroup>
+      <radio value="true" label="&deadfly.settings.yes;"/>
+      <radio value="false" label="&deadfly.settings.no;"/>
+      <radio value="false" label="&deadfly.settings.dont;"/>
+      <radio value="false" label="&deadfly.settings.never;"/>
+    </radiogroup>
+  </setting>
+
+  <setting pref="extensions.DeAdFly.debug"
+           type="bool"
+           class="kaskus-n"
+           title="&deadfly.settings.debug;"/>
+
+  <setting pref="extensions.DeAdFly.debug"
+           type="radio"
+           class="kaskus-y"
+           title="&deadfly.settings.debug2;">
+    <radiogroup>
+      <radio value="true" label="&deadfly.settings.console;"/>
+      <radio value="false" label="&deadfly.settings.newspaper;"/>
+    </radiogroup>
+  </setting>
+
+  <setting type="radio"
+           class="kaskus-y"
+           title="&deadfly.settings.status;">
+    <radiogroup>
+      <vbox>
+        <radio label="&deadfly.settings.status.single;"/>
+        <radio label="&deadfly.settings.status.relationship;"/>
+        <radio label="&deadfly.settings.status.engaged;"/>
+        <radio label="&deadfly.settings.status.married;"/>
+        <radio label="&deadfly.settings.status.complicated;"/>
+        <radio label="&deadfly.settings.status.open;"/>
+        <radio label="&deadfly.settings.status.widowed;"/>
+        <radio label="&deadfly.settings.status.separated;"/>
+        <radio label="&deadfly.settings.status.divorced;"/>
+        <radio label="&deadfly.settings.status.alone;" selected="true"/>
+      </vbox>
+    </radiogroup>
+  </setting>
+
+  <setting type="radio"
+           class="kaskus-y"
+           title="&deadfly.settings.rate;">
+    <radiogroup>
+      <radio label="&deadfly.settings.excellent;"/>
+      <radio label="&deadfly.settings.excellent;"/>
+      <radio label="&deadfly.settings.excellent;"/>
+      <radio label="&deadfly.settings.excellent;"/>
+      <radio label="&deadfly.settings.excellent;"/>
+    </radiogroup>
+  </setting>
+
+</vbox>

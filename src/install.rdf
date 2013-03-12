@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>deadfly@loucypher</em:id>
+    <em:type>2</em:type>
+    <!--em:unpack>true</em:unpack-->
+    <em:name>DeAdFly</em:name>
+    <em:version>0.1a2013031201</em:version>
+    <em:description>Expand AdF.ly link via context menu.</em:description>
+    <em:creator>LouCypher</em:creator>
+    <em:contributor>AMZMA http://www.kaskus.co.id/profile/3127056 (add-on idea)</em:contributor>
+    <em:contributor>kassio http://dead.altervista.org/ (name idea)</em:contributor>
+    <em:homepageURL>http://loucypher.github.com/</em:homepageURL>
+    <em:iconURL>chrome://deadfly/skin/deadfly-48.png</em:iconURL>
+    <em:icon64URL>chrome://deadfly/skin/deadfly-64.png</em:icon64URL>
+    <em:optionsURL>chrome://deadfly/content/settings.xul</em:optionsURL>
+    <em:optionsType>2</em:optionsType>
+    <em:targetApplication>
+      <Description><!--Firefox-->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>10.0</em:minVersion>
+        <em:maxVersion>21.0a2</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description><!-- SeaMonkey -->
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.7</em:minVersion>
+        <em:maxVersion>2.18a2</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

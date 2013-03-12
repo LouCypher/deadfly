@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+    Contributor(s):
+    - LouCypher (original code)
+-->
+
+<?xml-stylesheet href="../skin/"?>
+
+<!DOCTYPE vbox SYSTEM "chrome://deadfly/locale/">
+
+<overlay id="deadfly-browserOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="deadfly.js"/>
+  <script type="application/x-javascript" src="userscript/xmlhttprequester.js"/>
+  <script type="application/x-javascript" src="userscript/prefman.js"/>
+  <script type="application/x-javascript" src="userscript/script-compiler.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="deadfly-strings"
+                  src="chrome://deadfly/locale/deadfly.properties"/>
+  </stringbundleset>
+
+  <menupopup id="contentAreaContextMenu">
+    <menuitem id="context-deadfly" class="menuitem-iconic"
+              insertbefore="context-openlinkintab"
+              label="&deadfly.menu.label;"
+              oncommand="DeAdFly.getFly(gContextMenu.linkURL,
+ gContextMenu.target.ownerDocument, DeAdFly.action);"/>
+  </menupopup>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="ToolsPopup_deadfly-options" class="menuitem-iconic"
+              insertbefore="menu_preferences"
+              label="&deadfly.menu.options.label;"
+              oncommand="DeAdFly.options();"/>
+  </menupopup>
+
+  <menupopup id="appmenu_customizeMenu">
+    <menuitem id="appmenu_deadfly-options" class="menuitem-iconic"
+              insertafter="appmenu_preferences"
+              label="&deadfly.menu.options.label;"
+              oncommand="DeAdFly.options();"/>
+  </menupopup>
+
+</overlay>

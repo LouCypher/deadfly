@@ -1,0 +1,3 @@
+#addons-page:not(.kaskus) .kaskus-y, #addons-page.kaskus .kaskus-n {
+  display: none;
+}

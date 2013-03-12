@@ -1,0 +1,40 @@
+<!ENTITY deadfly.menu.label                         "De-AdF.ly">
+<!ENTITY deadfly.menu.options.label                 "De-AdF.ly Options">
+<!ENTITY deadfly.settings.action.openInCurrentTab   "Open in current tab">
+<!ENTITY deadfly.settings.action.openInNewTab       "Open in new tab">
+<!ENTITY deadfly.settings.action.openInIE           "Open in Internet Explorer">
+<!ENTITY deadfly.settings.action.openInPhone        "Open in your smartphone">
+<!ENTITY deadfly.settings.action.openInLaptop       "Open in your laptop">
+<!ENTITY deadfly.settings.action.openInDadLaptop    "Open in your father's laptop">
+<!ENTITY deadfly.settings.action.displayInURLBar    "Display the expanded URL in Location Bar">
+<!ENTITY deadfly.settings.action.read               "Display the expanded URL in Location Bar and read it out loud">
+<!ENTITY deadfly.settings.action.tell               "Display the expanded URL in Location Bar and tell your friend about it">
+<!ENTITY deadfly.settings.action.doNothing          "Do nothing at all">
+<!ENTITY deadfly.settings.openAdFlyIfFailed         "Open adf.ly link if expanding failed">
+<!ENTITY deadfly.settings.ifFailed                  "If expanding failed">
+<!ENTITY deadfly.settings.ifFailed.openAdFly        "Open adf.ly link">
+<!ENTITY deadfly.settings.ifFailed.doNothing        "Masturbate">
+<!ENTITY deadfly.settings.adFlyRedir                "Enable AdF.ly Redirect">
+<!ENTITY deadfly.settings.adFlyRedir.desc           "Redirect adf.ly link to its original location">
+<!ENTITY deadfly.settings.sendReferrer              "Send original referrer when opening URL">
+<!ENTITY deadfly.settings.yes                       "Yes">
+<!ENTITY deadfly.settings.no                        "No">
+<!ENTITY deadfly.settings.dont                      "Don't">
+<!ENTITY deadfly.settings.never                     "NEVERRRRRR">
+<!ENTITY deadfly.settings.debug                     "Log messages in console">
+<!ENTITY deadfly.settings.debug2                    "Log messages">
+<!ENTITY deadfly.settings.console                   "In console">
+<!ENTITY deadfly.settings.newspaper                 "In local newspaper">
+<!ENTITY deadfly.settings.status                    "Relationship status">
+<!ENTITY deadfly.settings.status.single             "Single">
+<!ENTITY deadfly.settings.status.relationship       "In a relationship">
+<!ENTITY deadfly.settings.status.engaged            "Engaged">
+<!ENTITY deadfly.settings.status.married            "Married">
+<!ENTITY deadfly.settings.status.complicated        "It's complicated">
+<!ENTITY deadfly.settings.status.open               "In an open relationship">
+<!ENTITY deadfly.settings.status.widowed            "Widowed">
+<!ENTITY deadfly.settings.status.separated          "Separated">
+<!ENTITY deadfly.settings.status.divorced           "Divorced">
+<!ENTITY deadfly.settings.status.alone              "Forever alone">
+<!ENTITY deadfly.settings.rate                      "Rate this extension">
+<!ENTITY deadfly.settings.excellent                 "Excellent">
