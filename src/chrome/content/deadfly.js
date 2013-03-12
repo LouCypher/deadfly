@@ -23,7 +23,9 @@ var DeAdFly = {
   },
 
   isAdFly: function deadfly_isAdFly(aURL) {
-    return /^https?:\/\/adf.ly\/(?=[A-Za-z0-9_\/]+)/.test(aURL);
+    var domains = "adf.ly|j.gs|q.gs|9.bb|u.bb";
+    var pattern = "^https?:\/\/(" + domains + ")\/(?=[A-Za-z0-9_\/]+)";
+    return (new RegExp(pattern)).test(aURL);
   },
 
   alert: function deadfly_alert(aString) {
