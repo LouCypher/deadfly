@@ -6,12 +6,12 @@
     <em:type>2</em:type>
     <!--em:unpack>true</em:unpack-->
     <em:name>DeAdFly</em:name>
-    <em:version>0.1a2013031201</em:version>
+    <em:version>0.1a2013031202</em:version>
     <em:description>Expand AdF.ly link via context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>AMZMA http://www.kaskus.co.id/profile/3127056 (add-on idea)</em:contributor>
     <em:contributor>kassio http://dead.altervista.org/ (name idea)</em:contributor>
-    <em:homepageURL>http://loucypher.github.com/</em:homepageURL>
+    <em:homepageURL>https://github.com/LouCypher/deadfly</em:homepageURL>
     <em:iconURL>chrome://deadfly/skin/deadfly-48.png</em:iconURL>
     <em:icon64URL>chrome://deadfly/skin/deadfly-64.png</em:icon64URL>
     <em:optionsURL>chrome://deadfly/content/settings.xul</em:optionsURL>
