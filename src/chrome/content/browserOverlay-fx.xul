@@ -30,7 +30,7 @@
               insertbefore="context-openlinkintab"
               label="&deadfly.menu.label;"
               oncommand="DeAdFly.getFly(gContextMenu.linkURL,
- gContextMenu.target.ownerDocument, DeAdFly.action);"/>
+ gContextMenu.target.ownerDocument);"/>
   </menupopup>
 
   <menupopup id="menu_ToolsPopup">
