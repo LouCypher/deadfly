@@ -163,20 +163,16 @@ var DeAdFly = {
 
   initContextMenu: function deadfly_initContextMenu(aEvent) {
     gContextMenu.showItem("context-deadfly", gContextMenu.onLink &&
-                                             this.isAdFly(gContextMenu.linkURL));
+                                             DeAdFly.isAdFly(gContextMenu.linkURL));
   },
 
   onLoad: function deadfly_onLoad(aEvent) {
     var popup = document.getElementById("contentAreaContextMenu");
-    popup.addEventListener("popupshowing", deadfly_context = function(e) {
-      DeAdFly.initContextMenu(e);
-    }, false);
-    popup.removeEventListener("popuphiding", deadfly_context, false);
-    this.checkForUserScript();
+    popup.addEventListener("popupshowing", DeAdFly.initContextMenu, false);
+    popup.removeEventListener("popuphiding", DeAdFly.initContextMenu, false);
+    DeAdFly.checkForUserScript();
   }
 }
 
-window.addEventListener("load", deadfly_load = function(e) {
-  DeAdFly.onLoad(e);
-}, false);
-window.removeEventListener("unload", deadfly_load, false);
+window.addEventListener("load", DeAdFly.onLoad, false);
+window.removeEventListener("unload", DeAdFly.onLoad, false);
