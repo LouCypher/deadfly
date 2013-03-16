@@ -93,9 +93,9 @@ var DeAdFly = {
   },
 
   getFly: function deadfly_getfly(aURL, aDocument) {
-    var deadfly = this;
+    this.debug(this.strings.getFormattedString("retrieving", [aURL]));
     try {
-      this.debug(this.strings.getFormattedString("retrieving", [aURL]));
+      var deadfly = this;
       var req = new XMLHttpRequest();
       req.open("GET", aURL, true);
       if (Services.prefs.getIntPref("network.http.sendRefererHeader") > 0) {
