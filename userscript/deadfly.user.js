@@ -42,7 +42,8 @@ var gInput;
 start(document);
 
 function start(doc) {
-  if (("contextMenu" in doc.documentElement && "HTMLMenuItemElement" in window)) {
+  if ((doc.contentType === "text/html") &&
+      ("contextMenu" in doc.documentElement && "HTMLMenuItemElement" in window)) {
     appendHTML(doc);
     GM_registerMenuCommand("DeAdFly Options", showConfig, "D");
   }
