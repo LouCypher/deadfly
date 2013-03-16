@@ -14,7 +14,7 @@
 
   <setting pref="extensions.DeAdFly.action"
            type="radio"
-           title="Default action">
+           title="&deadfly.settings.action.title;">
     <radiogroup>
       <vbox>
         <radio value="1" label="&deadfly.settings.action.openInCurrentTab;"/>

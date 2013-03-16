@@ -1,5 +1,6 @@
 <!ENTITY deadfly.menu.label                         "De-AdF.ly">
 <!ENTITY deadfly.menu.options.label                 "De-AdF.ly Options">
+<!ENTITY deadfly.settings.action.title              "Default action">
 <!ENTITY deadfly.settings.action.openInCurrentTab   "Open in current tab">
 <!ENTITY deadfly.settings.action.openInNewTab       "Open in new tab">
 <!ENTITY deadfly.settings.action.openInIE           "Open in Internet Explorer">
