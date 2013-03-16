@@ -117,9 +117,9 @@ function action(aString, aURL) {
       alert("Could not expand\n" + aURL);
       return;
     }
+    log("Could not expand " + aURL);
+    url = aURL;
   }
-  log("Could not expand " + aURL);
-  url = aURL;
 
   var action = GM_getValue("action", 0);
   switch (action) {
