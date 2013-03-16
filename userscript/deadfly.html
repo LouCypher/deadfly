@@ -3,7 +3,8 @@
     #deadfly-config {
       display: none;
       font-family: sans-serif;
-      font-size: 1em;
+      font-size: medium;
+      font-weight: normal;
       background-color: rgba(255, 255, 255, .9);
       color: black;
       border: none;
@@ -17,10 +18,18 @@
       z-index: 32768;
       box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
     }
+    #deadfly-config * {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
     #deadfly-config fieldset {
       border: 2px groove threedface;
+      margin-bottom: 1em;
+      padding: 1em;
     }
-    #deadfly-config label { line-height: 1.5em; }
+    #deadfly-config label { line-height: 2em; }
     #deadfly-config button { float: right; }
   </style>
   <menu id="deadfly-context-menu" type="context">
@@ -40,6 +49,7 @@
       <label for="deadfly-show-dialog">Show in dialog box</label><br/>
     </fieldset>
     <fieldset>
+      <legend>Other options</legend>
       <input name="openAdFly" type="checkbox" id="deadfly-openfly">
       <label for="deadfly-openfly">Open adf.ly link if expanding failed</label>
       <br/>
