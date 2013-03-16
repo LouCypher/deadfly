@@ -127,7 +127,38 @@ var DeAdFly = {
     }
   },
 
-  checkForUserScript: function deadfly_checkForUserScript() {
+  checkForDeadflyUserJS: function deadfly_checkForDeadflyUserJS() {
+    var types = [
+      "greasemonkey-user-script", // Greasemonkey
+      "user-script",              // Greasemonkey prior to version 1.7
+      "userscript"                // Scriptish
+    ]
+
+    var ids = ["http://userscripts.org/users/12/DeAdFly@greasespot.net",
+               "DeAdFly@httpuserscripts.orgusers12",
+               "deadfly.user.js@loucypher"]
+
+    var deadfly = this;
+    AddonManager.getAddonsByTypes(types, function(addons) {
+      var userscripts = [];
+      addons.forEach(function(addon) {
+        if (((addon.id === ids[0]) || (addon.id === ids[1]) || (addon.id === ids[2]))
+            && addon.isActive) {
+          userscripts.push(addon);
+        }
+      })
+      if (userscripts.length) {
+        userscripts.forEach(function(userscript) {
+          userscript.userDisabled = true;
+        })
+        var name = userscripts[0].name;
+        var message = deadfly.strings.getFormattedString("deadfly_userjs", [name]);
+        deadfly.alert(message);
+      }
+    })
+  },
+
+  checkForAdflyRedirUserJS: function deadfly_checkForAdFlyRedirUserJS() {
     if (!this.prefs.getBoolPref("redir.enabled")) return;
 
     var types = [
@@ -170,7 +201,8 @@ var DeAdFly = {
     var popup = document.getElementById("contentAreaContextMenu");
     popup.addEventListener("popupshowing", DeAdFly.initContextMenu, false);
     popup.removeEventListener("popuphiding", DeAdFly.initContextMenu, false);
-    DeAdFly.checkForUserScript();
+    DeAdFly.checkForAdflyRedirUserJS();
+    DeAdFly.checkForDeadflyUserJS();
   }
 }
 
