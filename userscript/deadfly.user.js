@@ -138,19 +138,23 @@ function showError(aReq) {
 function getFly(aEvent) {
   var node = aEvent.target; // <menuitem> element
   log("retrieving " + node.href);
-  GM_xmlhttpRequest({
-    method: "GET",
-    url: node.href,
-    timeout: 10000,
-    onreadystatechange: function(req) {
-      if (req.readyState == 4 && req.status == 200) {
-        log(this.url + " retrieved");
-        action(req.responseText, this.url);
-      }
-    },
-    ontimeout: showError,
-    onerror: showError
-  })
+  try {
+    GM_xmlhttpRequest({
+      method: "GET",
+      url: node.href,
+      timeout: 10000,
+      onreadystatechange: function(req) {
+        if (req.readyState == 4 && req.status == 200) {
+          log(this.url + " retrieved");
+          action(req.responseText, this.url);
+        }
+      },
+      ontimeout: showError,
+      onerror: showError
+    })
+  } catch(ex) {
+    alert(ex);
+  }
 }
 
 function showConfig() {
