@@ -18,7 +18,7 @@
 // @icon              https://raw.github.com/LouCypher/deadfly/master/src/chrome/skin/classic/deadfly-48.png
 // @icon64URL         https://raw.github.com/LouCypher/deadfly/master/src/chrome/skin/classic/deadfly-64.png
 // @contributionURL   http://loucypher.github.com/userscripts/donate.html?DeAdFly
-// @homepageURL       https://github.com/LouCypher/deadfly
+// @homepageURL       https://github.com/LouCypher/deadfly/tree/master/userscript
 // @supportURL        https://github.com/LouCypher/deadfly/issues
 // @downloadURL       https://raw.github.com/LouCypher/deadfly/master/userscript/deadfly.user.js
 // @updateURL         https://raw.github.com/LouCypher/deadfly/master/userscript/deadfly.user.js
