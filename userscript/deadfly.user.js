@@ -33,6 +33,7 @@
 // @grant             GM_xmlhttpRequest
 // @grant             GM_getResourceURL
 // @grant             GM_getResourceText
+// @grant             GM_registerMenuCommand
 // ==/UserScript==
 
 var gContextMenu;
@@ -43,6 +44,7 @@ start(document);
 function start(doc) {
   if (("contextMenu" in doc.documentElement && "HTMLMenuItemElement" in window)) {
     appendHTML(doc);
+    GM_registerMenuCommand("DeAdFly Options", showConfig, "D");
   }
 }
 
@@ -58,7 +60,11 @@ function appendHTML(doc) {
   $("#deadfly-config-open").icon = GM_getResourceURL("icon");
   $("#deadfly-config-open").addEventListener("click", showConfig, false);
   $("#deadfly-config-close").addEventListener("click", hideConfig, false);
-  $("#deadfly-log").addEventListener("change", setLog, false);
+
+  $("#deadfly-openfly").addEventListener("change", setValue, false);
+  $("#deadfly-openfly").checked = GM_getValue("openAdFly", true);
+
+  $("#deadfly-log").addEventListener("change", setValue, false);
   $("#deadfly-log").checked = GM_getValue("log", false);
   
   var options = doc.querySelectorAll("#deadfly-config input");
@@ -68,7 +74,6 @@ function appendHTML(doc) {
       GM_setValue("action", parseInt(e.target.value));
     }, false);
   }
-
 }
 
 function initContextMenu(aEvent) {
@@ -107,9 +112,14 @@ function action(aString, aURL) {
   log("expanding " + aURL);
   var url = expand(aString);
   if (!url) {
-    alert("Could not expand\n" + aURL);
-    return;
+    if (!GM_getValue("openAdFly", true)) {
+      alert("Could not expand\n" + aURL);
+      return;
+    }
   }
+  log("Could not expand " + aURL);
+  url = aURL;
+
   var action = GM_getValue("action", 0);
   switch (action) {
     case 2: log("showing " + url); prompt("Original URL:", url); break;
@@ -153,8 +163,10 @@ function hideConfig() {
   $("#deadfly-config-open").disabled = false;
 }
 
-function setLog(aEvent) {
-  GM_setValue("log", aEvent.target.checked);
+function setValue(aEvent) {
+  var node = aEvent.target;
+  var prefname = node.name;
+  GM_setValue(prefname, node.checked);
 }
 
 function $(aSelector, aNode) {

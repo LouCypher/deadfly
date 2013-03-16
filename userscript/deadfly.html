@@ -24,8 +24,10 @@
     #deadfly-config button { float: right; }
   </style>
   <menu id="deadfly-context-menu" type="context">
-    <menuitem id="deadfly-getfly" label="De-AdF.ly" href="" icon=""></menuitem>
-    <menuitem id="deadfly-config-open" label="De-AdF.ly Options"></menuitem>
+    <menuitem id="deadfly-getfly" label="De-AdF.ly" href="" icon="">
+    </menuitem>
+    <menuitem id="deadfly-config-open" label="De-AdF.ly Options" hidden="true">
+    </menuitem>
   </menu>
   <div id="deadfly-config">
     <fieldset>
@@ -38,6 +40,9 @@
       <label for="deadfly-show-dialog">Show in dialog box</label><br/>
     </fieldset>
     <fieldset>
+      <input name="openAdFly" type="checkbox" id="deadfly-openfly">
+      <label for="deadfly-openfly">Open adf.ly link if expanding failed</label>
+      <br/>
       <input name="log" type="checkbox" id="deadfly-log">
       <label for="deadfly-log">Log messages in console</label>
     </fieldset>
