@@ -1,0 +1,46 @@
+<div>
+  <style type="text/css">
+    #deadfly-config {
+      display: none;
+      font-family: sans-serif;
+      font-size: 1em;
+      background-color: rgba(255, 255, 255, .9);
+      color: black;
+      border: none;
+      width: 400px;
+      border-radius: 6px;
+      padding: 1em;
+      position: fixed;
+      top:  50px;
+      left: -moz-calc(50% - 200px);
+      left:      calc(50% - 200px);
+      z-index: 32768;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+    }
+    #deadfly-config fieldset {
+      border: 2px groove threedface;
+    }
+    #deadfly-config label { line-height: 1.5em; }
+    #deadfly-config button { float: right; }
+  </style>
+  <menu id="deadfly-context-menu" type="context">
+    <menuitem id="deadfly-getfly" label="De-AdF.ly" href="" icon=""></menuitem>
+    <menuitem id="deadfly-config-open" label="De-AdF.ly Options"></menuitem>
+  </menu>
+  <div id="deadfly-config">
+    <fieldset>
+      <legend>Default action for expanded adf.ly link</legend>
+      <input name="action" value="0" type="radio" id="deadfly-current-tab">
+      <label for="deadfly-current-tab">Open in current tab</label><br/>
+      <input name="action" value="1" type="radio" id="deadfly-new-tab">
+      <label for="deadfly-new-tab">Open in new tab</label><br/>
+      <input name="action" value="2" type="radio" id="deadfly-show-dialog">
+      <label for="deadfly-show-dialog">Show in dialog box</label><br/>
+    </fieldset>
+    <fieldset>
+      <input name="log" type="checkbox" id="deadfly-log">
+      <label for="deadfly-log">Log messages in console</label>
+    </fieldset>
+    <button id="deadfly-config-close">Close</button>
+  </div>
+</div>
