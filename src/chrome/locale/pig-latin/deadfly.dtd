@@ -1,0 +1,41 @@
+<!ENTITY deadfly.menu.label                         "De-AdF.ly">
+<!ENTITY deadfly.menu.options.label                 "De-AdF.ly Optionsway">
+<!ENTITY deadfly.settings.action.title              "Efaultday actionway">
+<!ENTITY deadfly.settings.action.openInCurrentTab   "Openway inway urrentcay abtay">
+<!ENTITY deadfly.settings.action.openInNewTab       "Openway inway ewnay abtay">
+<!ENTITY deadfly.settings.action.openInIE           "Openway inway Internet Explorer">
+<!ENTITY deadfly.settings.action.openInPhone        "Openway inway yourway artphonesmay">
+<!ENTITY deadfly.settings.action.openInLaptop       "Openway inway yourway aptoplay">
+<!ENTITY deadfly.settings.action.openInDadLaptop    "Openway inway yourway ather'sfay aptoplay">
+<!ENTITY deadfly.settings.action.displayInURLBar    "Isplayday ethay expandedway URL inway Location Bar">
+<!ENTITY deadfly.settings.action.read               "Isplayday ethay expandedway URL inway Location Bar andway eadray itway outway oudlay">
+<!ENTITY deadfly.settings.action.tell               "Isplayday ethay expandedway URL inway Location Bar andway elltay yourway iendfray aboutway itway">
+<!ENTITY deadfly.settings.action.doNothing          "Oday othingnay atway allway">
+<!ENTITY deadfly.settings.openAdFlyIfFailed         "Openway adf.ly inklay ifway expandingway ailedfay">
+<!ENTITY deadfly.settings.ifFailed                  "Ifway expandingway ailedfay">
+<!ENTITY deadfly.settings.ifFailed.openAdFly        "Openway adf.ly inklay">
+<!ENTITY deadfly.settings.ifFailed.doNothing        "Asturbatemay">
+<!ENTITY deadfly.settings.adFlyRedir                "Enableway AdF.ly Redirect">
+<!ENTITY deadfly.settings.adFlyRedir.desc           "Edirectray adf.ly inklay otay itsway originalway ocationlay">
+<!ENTITY deadfly.settings.sendReferrer              "Endsay originalway eferrerray enwhay openingway URL">
+<!ENTITY deadfly.settings.yes                       "Yesway">
+<!ENTITY deadfly.settings.no                        "Onay">
+<!ENTITY deadfly.settings.dont                      "On'tday">
+<!ENTITY deadfly.settings.never                     "EVERRRRRRNAY">
+<!ENTITY deadfly.settings.debug                     "Oglay essagesmay inway onsolecay">
+<!ENTITY deadfly.settings.debug2                    "Oglay essagesmay">
+<!ENTITY deadfly.settings.console                   "Inway onsolecay">
+<!ENTITY deadfly.settings.newspaper                 "Inway ocallay ewspapernay">
+<!ENTITY deadfly.settings.status                    "Elationshipray atusstay">
+<!ENTITY deadfly.settings.status.single             "Inglesay">
+<!ENTITY deadfly.settings.status.relationship       "Inway away elationshipray">
+<!ENTITY deadfly.settings.status.engaged            "Engagedway">
+<!ENTITY deadfly.settings.status.married            "Arriedmay">
+<!ENTITY deadfly.settings.status.complicated        "It'sway omplicatedcay">
+<!ENTITY deadfly.settings.status.open               "Inway anway openway elationshipray">
+<!ENTITY deadfly.settings.status.widowed            "Idowedway">
+<!ENTITY deadfly.settings.status.separated          "Eparatedsay">
+<!ENTITY deadfly.settings.status.divorced           "Ivorcedday">
+<!ENTITY deadfly.settings.status.alone              "Oreverfay aloneway">
+<!ENTITY deadfly.settings.rate                      "Ateray isthay extensionway">
+<!ENTITY deadfly.settings.excellent                 "Excellentway">
