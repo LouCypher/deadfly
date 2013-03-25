@@ -10,7 +10,7 @@ Expand AdF.ly link via Firefox context menu.
 ## Installations
 
 * [Release version](https://addons.mozilla.org/addon/deadfly/?src=external-home).
-* [Dev build](http://dl.dropbox.com/u/120550/extensions/deadfly/deadfly.xpi).
+* [Dev build](http://dl.dropbox.com/u/120550/extensions/deadfly.xpi).
 
 ## Screenshots
 
