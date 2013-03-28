@@ -4,11 +4,7 @@ DeAdFly userscript does exactly the same as the extension, minus AdFly Redir.
 
 ## Compatibility
 
-### Browsers
 * Firefox 12.0 or newer
-* SeaMonkey 2.9 or newer
-
-### Extensions
 * Greasemonkey 1.0 or newer
 * Scriptish 0.1.8 or newer
 
