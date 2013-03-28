@@ -12,7 +12,7 @@
 // @id                deadfly.user.js@loucypher
 // @namespace         http://userscripts.org/users/12
 // @description       Expand AdF.ly link via context menu.
-// @version           1.0a
+// @version           2.1
 // @author            LouCypher
 // @license           MPL 2.0
 // @icon              https://raw.github.com/LouCypher/deadfly/master/src/chrome/skin/classic/deadfly-48.png
