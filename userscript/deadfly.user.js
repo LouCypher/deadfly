@@ -12,7 +12,7 @@
 // @id                deadfly.user.js@loucypher
 // @namespace         http://userscripts.org/users/12
 // @description       Expand AdF.ly link via context menu.
-// @version           1.0a
+// @version           2.0
 // @author            LouCypher
 // @license           MPL 2.0
 // @icon              https://raw.github.com/LouCypher/deadfly/master/src/chrome/skin/classic/deadfly-48.png
@@ -110,8 +110,7 @@ function expand(aString) {
 }
 
 function action(aString, aURL) {
-  log("expanding " + aURL);
-  var url = expand(aString);
+  var url = aString;
   if (!url) {
     if (!GM_getValue("openAdFly", true)) {
       alert("Could not expand\n" + aURL);
@@ -120,7 +119,6 @@ function action(aString, aURL) {
     log("Could not expand " + aURL);
     url = aURL;
   }
-
   var action = GM_getValue("action", 0);
   switch (action) {
     case 2: log("showing " + url); prompt("Original URL:", url); break;
@@ -136,6 +134,25 @@ function showError(aReq) {
   aReq.abort();
 }
 
+function getZZZ(aZZZ, aURL) {
+  log("expanding " + aURL);
+  GM_xmlhttpRequest({
+    method: "POST",
+    url: "http://adf.ly/shortener/go",
+    timeout: 10000,
+    ontimeout: showError,
+    onerror: showError,
+    headers: { "Content-type": "application/x-www-form-urlencoded" },
+    data: "zzz=" + aZZZ,
+    onreadystatechange: function(req) {
+      if (req.readyState == 4 && req.status == 200) {
+        log(this.url + " retrieved");
+        action(req.responseText, aURL);
+      }
+    }
+  })
+}
+
 function getFly(aEvent) {
   var node = aEvent.target; // <menuitem> element
   log("retrieving " + node.href);
@@ -144,14 +161,19 @@ function getFly(aEvent) {
       method: "GET",
       url: node.href,
       timeout: 10000,
+      ontimeout: showError,
+      onerror: showError,
       onreadystatechange: function(req) {
         if (req.readyState == 4 && req.status == 200) {
           log(this.url + " retrieved");
-          action(req.responseText, this.url);
+          var res = expand(req.responseText);
+          if (/^http:/.test(res)) {
+            action(res, this.url);
+          } else {
+            getZZZ(res, this.url);
+          }
         }
-      },
-      ontimeout: showError,
-      onerror: showError
+      }
     })
   } catch(ex) {
     alert(ex);
