@@ -10,7 +10,7 @@
 
 <?xml-stylesheet href="../skin/"?>
 
-<!DOCTYPE vbox SYSTEM "chrome://deadfly/locale/">
+<!DOCTYPE overlay SYSTEM "../locale/">
 
 <overlay id="deadfly-browserOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
