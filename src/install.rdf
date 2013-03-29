@@ -4,9 +4,9 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>deadfly@loucypher</em:id>
     <em:type>2</em:type>
-    <!--em:unpack>true</em:unpack-->
+    <em:unpack>false</em:unpack>
     <em:name>DeAdFly</em:name>
-    <em:version>0.1a2013031602</em:version>
+    <em:version>0.1a2</em:version>
     <em:description>Expand AdF.ly link via context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:contributor>AMZMA http://www.kaskus.co.id/profile/3127056 (add-on idea)</em:contributor>
