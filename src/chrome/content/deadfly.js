@@ -193,7 +193,8 @@ var DeAdFly = {
   },
 
   initContextMenu: function deadfly_initContextMenu(aEvent) {
-    gContextMenu.showItem("context-deadfly", gContextMenu.onLink &&
+    gContextMenu.showItem("context-deadfly", (gContextMenu.onLink ||
+                                              gContextMenu.onPlainTextLink) &&
                                              DeAdFly.isAdFly(gContextMenu.linkURL));
   },
 
